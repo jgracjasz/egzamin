@@ -1,0 +1,107 @@
+/*zmienne*/
+:root {
+    --background-color: #0b0b0e;
+    --text-color: #cccccc;
+    --secondary-text-color: #cfcfcfa0;
+    --pink-color: #ed6f86;
+    --yellow-color: #ffcf22;
+    --base-font-size: 22px;
+    --font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.logo-yellow {
+    color: var(--yellow-color);
+}
+
+.logo-pink {
+    color: var(--pink-color);
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    color: var(--secondary-text-color);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: var(--pink-color);
+}
+
+.main {
+    margin-bottom: 60px;
+}
+
+.main-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.main-text {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.secondary-text {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.icona_heands {
+    width: 20px;
+    height: 20px;
+
+}
+
+/*footer*/
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    border: 0;
+}
+
+.contact p {
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+}
