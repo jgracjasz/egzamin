@@ -26,10 +26,15 @@ body {
 
 .header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .logo {
     font-weight: bold;
@@ -60,13 +65,29 @@ body {
 }
 
 .main {
-    margin-bottom: 60px;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text-content {
+    max-width: 600px;
+    text-align: right;
 }
 
 .main-image {
     width: 300px;
     height: auto;
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -93,15 +114,86 @@ h1 {
 
 }
 
+.img {
+    flex-shrink: 0;
+}
+
 /*footer*/
 footer {
     margin-top: 40px;
     padding: 20px 0;
-    text-align: center;
     border: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .contact p {
     color: var(--secondary-text-color);
     margin-top: 10px;
+}
+
+.contact a {
+    margin-top: 10px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: var(--pink-color);
+}
+
+
+/*responsywność*/
+
+@media (max-width: 430px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .footer-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact {
+        align-items: center;
+    }
 }
